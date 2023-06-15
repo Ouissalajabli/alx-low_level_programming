@@ -1,5 +1,5 @@
 #!/bin/bash
 
-CFILE="main.c"
+CFILE="$1"
 BASENAME=$(basename "$CFILE" .c)
 gcc -S -masm=intel "$CFILE" -o "$BASENAME.s"
