@@ -10,24 +10,22 @@
  */
 int main(void)
 {
-int hundredsDigit;
-int tensDigit;
-int onesDigit;
+int i, j, k;
 
-for (hundredsDigit = 0; hundredsDigit < 8; hundredsDigit++)
+for (i = 0; i <= 7; i++)
 {
-for (tensDigit = hundredsDigit + 1; tensDigit < 9; tensDigit++)
+for (j = i + 1; j <= 8; j++)
 {
-for (onesDigit = tensDigit + 1; onesDigit < 10; onesDigit++)
+for (k = j + 1; k <= 9; k++)
 {
-putchar(hundredsDigit + '0');
-putchar(tensDigit + '0');
-putchar(onesDigit + '0');
+putchar(i + '0');
+putchar(j + '0');
+putchar(k + '0');
 
-if (hundredsDigit != 7 || tensDigit != 8 || onesDigit != 9)
+if (i != 7 || j != 8 || k != 9)
 {
-
-putchar(',')putchar(' ');
+putchar(',');
+putchar(' ');
 }
 }
 }
