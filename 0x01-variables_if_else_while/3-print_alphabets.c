@@ -1,5 +1,12 @@
 #include <stdio.h>
-
+/**
+ * main - Entry point
+ *
+ * Description: Prints the alphabet in lowercase, followed by uppercase,
+ *              using only the putchar function.
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 char lowercase = 'a';
