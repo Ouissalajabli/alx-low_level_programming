@@ -1,27 +1,25 @@
 #include "main.h"
 
 /**
- * print_alphabet - Prints the lowercase alphabet 10 times.
- *
- * This function prints the lowercase alphabet in sequential order,
- * starting from 'a' and ending with 'z'. It uses nested loops to print
- * the alphabet 10 times, followed by a new line.
+ * print_alphabet_x10 - prints 10 times the alphabet, in lowercase,
+ * followed by a new line
  */
 void print_alphabet_x10(void)
 {
+char ch;
 int i;
-char letter;
 
-for (i = 0; i < 10; i++)
-{
-letter = 'a';
+i = 0;
 
-while (letter <= 'z')
+while (i < 10)
 {
-_putchar(letter);
-letter++;
+ch = 'a';
+while (ch <= 'z')
+{
+_putchar(ch);
+ch++;
 }
-
 _putchar('\n');
+i++;
 }
 }
